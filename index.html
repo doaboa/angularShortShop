@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- write a directive in the html tag to connect to module in app.js -->
+<html ng-app="store">
+
+	<head>
+		<!-- bootstrap -->
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+	</head>
+
+	<!-- body has directive that calls controller name and gives it alias -->
+	<body class="container" ng-controller="StoreController as store">
+		<!-- div has ng-repeat directive to iterate through store.products array -->
+		<div class="product row" ng-repeat="product in store.products">
+			<h1> {{product.name}} 
+			 <em class="pull-right">${{product.price}}</em> </h1>
+			<button class="pull-right" ng-show="product.canPurchase"> Add to Cart </button>
+			<p> {{product.description}} </p>
+			<!-- show directive shows element if value of expression is true, also hide -->
+		</div>
+
+		<!-- angular and app.js -->
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+
+</html>

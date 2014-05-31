@@ -1,0 +1,1 @@
+Practicing using controllers, modules, directives and expressions in angular.js.  Also using bootstrap after a very long time.  Code is simple and heavily commented.
