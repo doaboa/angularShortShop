@@ -12,10 +12,12 @@
 		<!-- div has ng-repeat directive to iterate through store.products array -->
 		<div class="product row" ng-repeat="product in store.products">
 			<h1> {{product.name}} 
-			 <em class="pull-right">${{product.price}}</em> </h1>
-			 			<!-- show directive shows element if value of expression is true, also hide -->
+			 <em class="pull-right">{{product.price | currency}}</em> </h1>
+			<!-- show directive shows element if value of expression is true, also hide -->
 			<button class="pull-right" ng-show="product.canPurchase"> Add to Cart </button>
 			<p> {{product.description}} </p>
+			<!-- image directive allows location to compile before finding source -->
+			<img ng-src="{{product.images[0].front}}"/>
 		</div>
 
 		<!-- angular and app.js -->

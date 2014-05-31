@@ -15,15 +15,27 @@
 	var shorts = [
 	{
 		name: 'White and Blue Shorts',
-		price: 12.95,
+		price: 12,
 		description: 'Bleached white on top, high-waisted rockies with blue trim on the bottom.',
-		canPurchase: true
+		canPurchase: true,
+		images: [
+			{
+				front: 'short1.jpg',
+				back: 'short1b.jpg'
+			}
+		]
 	},
 	{
 		name: "Pink and Green Shorts",
 		price: 10.95,
 		description: 'A little pink, a little green, lots of nice blue in-between.  Low waist.',
-		canPurchase: false
+		canPurchase: false,
+		images: [
+			{
+				front: 'short2jpeg.jpeg',
+				back: 'short2b.jpg'
+			}
+		]
 	}
 
 ];
