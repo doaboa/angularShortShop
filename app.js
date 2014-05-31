@@ -18,24 +18,14 @@
 		price: 12,
 		description: 'Bleached white on top, high-waisted rockies with blue trim on the bottom.',
 		canPurchase: true,
-		images: [
-			{
-				front: 'short1.jpg',
-				back: 'short1b.jpg'
-			}
-		]
+		images: 'short1.jpg'
 	},
 	{
 		name: "Pink and Green Shorts",
 		price: 10.95,
 		description: 'A little pink, a little green, lots of nice blue in-between.  Low waist.',
 		canPurchase: false,
-		images: [
-			{
-				front: 'short2jpeg.jpeg',
-				back: 'short2b.jpg'
-			}
-		]
+		images: 'short2jpeg.jpeg'
 	}
 
 ];

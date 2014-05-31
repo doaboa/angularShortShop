@@ -9,17 +9,18 @@
 
 	<!-- body has directive that calls controller name and gives it alias -->
 	<body class="container" ng-controller="StoreController as store">
-		<h3>Shorts for Sale, y'all</h3>
+		<h3>Short for sale, y'all</h3>
 		<ul class="list-group">
 			<!-- div/li has ng-repeat directive to iterate through store.products array -->
 			<li class="list-group-item" ng-repeat="product in store.products">
 				<h1> {{product.name}} 
 				 <em class="pull-right">{{product.price | currency}}</em> </h1>
-				<!-- show directive shows element if value of expression is true, also hide -->
+				<!-- show directive shows element if value of expression is true, also ng-hide, if displaying array based on how many in it, use .length to create 0 or false and not display something -->
 				<button class="pull-right" ng-show="product.canPurchase"> Add to Cart </button>
 				<p> {{product.description}} </p>
 				<!-- image directive allows location to compile before finding source -->
-				<img ng-src="{{product.images[0].front}}"/>
+				<img ng-src="{{product.images}}"/>
+				<!-- this calls individual, but ng-repeat="image in product.images" would yield all images -->
 			</li>
 		</ul>
 
