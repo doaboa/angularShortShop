@@ -11,7 +11,7 @@
 
 	});
 
-	//var in app.js that we can call in controllers
+	//array of items that we can call in controllers
 	var shorts = [
 	{
 		name: 'White and Blue Shorts',

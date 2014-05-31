@@ -13,9 +13,9 @@
 		<div class="product row" ng-repeat="product in store.products">
 			<h1> {{product.name}} 
 			 <em class="pull-right">${{product.price}}</em> </h1>
+			 			<!-- show directive shows element if value of expression is true, also hide -->
 			<button class="pull-right" ng-show="product.canPurchase"> Add to Cart </button>
 			<p> {{product.description}} </p>
-			<!-- show directive shows element if value of expression is true, also hide -->
 		</div>
 
 		<!-- angular and app.js -->
